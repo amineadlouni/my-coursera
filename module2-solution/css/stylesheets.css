@@ -1,0 +1,105 @@
+*{
+	box-sizing: border-box;
+}
+/* to remove any daufault margins caused by the browser*/
+body{
+	margin:0px;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 1.75em;
+}
+
+.row{
+	width: 100%;
+}
+
+/*style for every paragraph header*/
+#p-name1{
+	text-align: center;
+	
+	border:1px solid black;
+	background-color: #2a5736;
+	color: white;
+	float: right;
+	font-size: 1.25em;
+	padding-right: 5%;
+	padding-left: 5%;
+
+}
+#p-name2{
+	text-align: center;
+	border:1px solid black;
+	background-color: #336b42;
+	color: white;
+	float: right;
+	font-size: 1.25em;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+#p-name3{
+	text-align: center;
+	border:1px solid black;
+	background-color:#57bd72;
+	color: black;
+	float: right;
+	font-size: 1.25em;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+
+/*for each div containing a paragraph*/
+.paragraph{
+	color: white;
+	font-size:
+    box-sizing: border-box;
+	border: 1px solid black;
+	background-color:#6b390e;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+}
+
+
+/*defining a margin for the p element for it not to overlap with the header*/
+p{
+	margin: 2%;
+	margin-top: 8%;
+}
+
+/*for computer*/
+@media (min-width: 992px)
+{
+	.col-lrg4{
+    width: 33.33%;
+    float: left;
+	}
+}
+
+/*for tablets*/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md6{
+    width: 50%;
+    float: left;
+	}
+
+	.col-md12{
+		width: 100%;
+		float: left;
+
+	}
+
+/*alligning with the 50% paragraphs*/
+
+	.col-md12>.paragraph{
+	width: 98%;
+	
+ 	}
+
+}
+
